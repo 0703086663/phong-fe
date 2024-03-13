@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./app.css">
+</head>
+
+<body>
+    <div class="header-top">
+        <div class="header-social">
+            <ul>
+                <li><svg width="16px" height="16px" viewBox="0 0 48 48" id="Layer_2" data-name="Layer 2"
+                        xmlns="http://www.w3.org/2000/svg" fill="#ee5055" stroke="#ee5055">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: none;
+                                        stroke: #ee5055;
+                                        stroke-linecap: round;
+                                        stroke-linejoin: round;
+                                    }
+                                </style>
+                            </defs>
+                            <path class="cls-1"
+                                d="M7.5,5.5h33a2,2,0,0,1,2,2v8.33a2,2,0,0,1-2,2H30.17v9.93a2.41,2.41,0,0,1-2.41,2.41H17.83V40.5a2,2,0,0,1-2,2H7.5a2,2,0,0,1-2-2V7.5A2,2,0,0,1,7.5,5.5Z">
+                            </path>
+                        </g>
+                    </svg></li>
+                <li><svg fill="#ee5055" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 512 512"
+                        xml:space="preserve" stroke="#ee5055">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g id="7935ec95c421cee6d86eb22ecd12951c">
+                                <path style="display: inline;"
+                                    d="M220.646,338.475C207.223,408.825,190.842,476.269,142.3,511.5 c-14.996-106.33,21.994-186.188,39.173-270.971c-29.293-49.292,3.518-148.498,65.285-124.059 c76.001,30.066-65.809,183.279,29.38,202.417c99.405,19.974,139.989-172.476,78.359-235.054 C265.434-6.539,95.253,81.775,116.175,211.161c5.09,31.626,37.765,41.22,13.062,84.884c-57.001-12.65-74.005-57.6-71.822-117.533 c3.53-98.108,88.141-166.787,173.024-176.293c107.34-12.014,208.081,39.398,221.991,140.376 c15.67,113.978-48.442,237.412-163.23,228.529C258.085,368.704,245.023,353.283,220.646,338.475z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg></li>
+                <li><svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                                fill="#ee5055"></path>
+                            <path
+                                d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                                fill="#ee5055"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                                fill="#ee5055"></path>
+                        </g>
+                    </svg></li>
+                <li><svg width="16px" height="16px" viewBox="-5 0 20 20" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <title>facebook [#ee5055176]</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs> </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-385.000000, -7399.000000)"
+                                    fill="#ee5055">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path
+                                            d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z"
+                                            id="facebook-[#ee5055176]"> </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg></li>
+                <li><svg width="16px" height="16px" viewBox="0 -2 20 20" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <title>twitter [#ee5055154]</title>
+                            <desc>Created with Sketch.</desc>
+                            <defs> </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-60.000000, -7521.000000)"
+                                    fill="#ee5055">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path
+                                            d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705"
+                                            id="twitter-[#ee5055154]"> </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg></li>
+            </ul>
+        </div>
+        <div class="header-logo">
+            <a href="#!"><svg viewBox="0 0 382 74" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="none">
+                        <path
+                            d="M369.893 47.467l-6.773-1.665c-3.338-.784-7.067-2.645-7.067-6.956 0-4.31 3.631-7.347 8.932-7.347 4.515 0 8.54 2.743 8.834 6.857h6.085c-.294-8.229-7.361-12.441-15.017-12.441-8.736 0-15.116 5.388-15.116 12.833 0 7.642 5.202 10.973 11.68 12.54l6.577 1.567c4.711 1.176 7.263 3.625 7.263 7.348 0 4.604-4.024 7.837-10.6 7.837-6.675 0-10.209-3.918-10.896-7.74h-5.791c.785 8.72 8.736 13.324 16.686 13.324 9.521 0 16.883-5.192 16.883-13.323 0-5.29-2.748-10.678-11.68-12.834M342.99 26.894l-13.349 36.248-13.447-36.248h-6.478l-13.35 36.346-13.447-36.346h-6.772l17.57 45.75h5.496l13.644-37.423 14.232 37.424h5.497l17.079-45.75zm-87.643 40.754c-9.717 0-17.668-7.151-17.668-18.026 0-10.776 7.95-17.731 17.668-17.731 9.62 0 17.766 6.955 17.766 17.731 0 10.875-8.147 18.026-17.766 18.026m0-41.733c-13.055 0-23.95 9.208-23.95 23.707 0 14.5 10.895 24.002 23.95 24.002s24.048-9.502 24.048-24.002c0-14.499-10.993-23.707-24.048-23.707m-46.76 0c-5.692 0-13.152 2.645-15.9 9.208v-8.229h-6.282v45.75h6.282V47.272c.196-11.07 7.95-15.185 15.312-15.185 7.361 0 12.956 5.389 12.956 14.206v26.353h6.282V45.998c0-12.638-7.558-20.083-18.65-20.083m-30.79 1.255h-8.697l-17.1 17.624V1.276h-6.255v71.873H152V49.52l23.062 23.63h8.502l-25.31-25.992z"
+                            fill="#e3a294"></path>
+                        <path
+                            d="M127.185 29.147c2.764 0 4.814 2.329 4.814 5.42 0 8.569-9.983 13.797-18.51 15.545 1.835-10.286 6.629-20.965 13.696-20.965m13.841 5.95c0-4.504-4.547-8.399-14.46-8.399-13.89 0-29.568 12.259-29.568 26.98 0 10.923 7.565 19.848 20.984 19.848 9.652 0 18.593-6.174 22.036-14.22l-2.244-1.138c-3.51 7.41-11.617 12.517-17.55 12.517-3.534 0-5.872-1.763-6.95-6.367-.745-3.037-.758-7.25-.245-11.756 9.854-1.918 27.997-7.483 27.997-17.464M85.228 69.706c-.982 0-2.068-.49-2.402-2.058-.667-3.135.65-6.171 5.69-17.536 4.028-9.209 4.518-12.441 3.955-15.086-1.362-6.858-5.895-8.328-11.981-8.328-7.165 0-15.584 6.564-20.461 16.85h-.393l7.105-20.573c2.136-6.563 3.194-9.894 2.423-13.519C68.023 4.558 64.042.15 56.385.15c-6.38 0-11.105 3.625-13.178 10.483l2.29 1.077C47.5 5.44 51.241 3.186 53.4 3.186c1.669 0 2.6.686 2.955 2.352.417 1.959-.353 4.8-3.342 13.813L35.872 72.547c1.781-.392 4.86-.686 7.51-.686 2.16 0 6.169.392 7.703.686l4.273-13.128c4.02-12.931 9.363-20.573 14.02-24.981 2.52-2.45 5.848-4.8 8.597-4.8 1.276 0 1.835.783 2.023 1.665.62 2.449-2.862 8.23-6.607 16.458-3.534 7.838-5.227 13.716-4.414 17.536 1.078 4.605 4.5 8.23 11.469 8.23 8.245 0 13.344-5.095 15.743-9.503l-2.177-1.47c-2.203 4.409-6.036 7.152-8.784 7.152"
+                            fill="#ef5152"></path>
+                        <path
+                            d="M27.904 47.173c-2.291-4.31-6.026-9.404-6.693-12.54-.626-2.938.536-5.78 5.15-5.78 3.14 0 4.506.882 4.881 2.646.397 1.861-.635 2.547-.057 4.8.5 2.351 2.993 3.919 5.643 3.919 3.043 0 4.428-2.253 3.74-5.486-1.084-5.095-6.716-8.034-14.47-8.034-10.503 0-17.472 7.838-15.72 16.067.87 3.625 2.623 7.25 5.146 11.266 3.083 4.8 5.672 7.74 6.485 11.56.474 1.763.74 5.78-5.836 5.78-3.534 0-6.812-1.567-7.125-3.037-.355-1.665 1.54-2.449.893-5.486-.5-2.351-2.431-4.506-5.67-4.506-3.24 0-4.758 2.547-4.133 5.486 1.272 5.976 9.524 9.698 16.591 9.698 13.055 0 18.62-7.053 17.146-13.519-1-4.702-2.756-6.956-5.97-12.834"
+                            fill="#ef5152"></path>
+                    </g>
+                </svg></a>
+        </div>
+        <div class="header-ads"></div>
+    </div>
+    <nav class="navigation">
+        <div class="icon-left">
+            <button id="nav-bar-icon" onclick="openDropdownNav()">
+                <svg fill="#000000" width="16px" height="16px" viewBox="0 -2 28 28" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="m0 0h27.65v5.219h-27.65z"></path>
+                        <path d="m0 9.39h27.65v5.219h-27.65z"></path>
+                        <path d="m0 18.781h27.65v5.219h-27.65z"></path>
+                    </g>
+                </svg>
+            </button>
+            <div>
+                <button onclick="openSearchBar()">
+                    <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
+                                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </svg>
+                </button>
+                <div id="search-bar">
+                    <button onclick="closeSearchBar()">
+                        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path d="M16 8L8 16M8 8L16 16" stroke="#ffffff" stroke-width="2" stroke-linecap="round">
+                                </path>
+                            </g>
+                        </svg>
+                    </button>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="nav-center">
+            <ul>
+                <li>
+                    PARENTING
+                </li>
+                <li>ENTERTAINMENT</li>
+                <li>HEALTH</li>
+                <li>FOOD</li>
+                <li>SHOPPING</li>
+                <li>DIGITAL ISSUES</li>
+            </ul>
+        </div>
+        <div class="newsletters">
+            <a href="#!"><svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M3 8L8.44992 11.6333C9.73295 12.4886 10.3745 12.9163 11.0678 13.0825C11.6806 13.2293 12.3194 13.2293 12.9322 13.0825C13.6255 12.9163 14.2671 12.4886 15.5501 11.6333L21 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z"
+                            stroke="#a9131e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </svg>
+                NEWSLETTERS
+            </a>
+        </div>
+    </nav>
+    <section id="shopping-page">
+        <div class="section-background">
+            <div class="section-title">
+                <h2>WHAT WE'RE</h2>
+                <h1>Shopping</h1>
+            </div>
+            <div class="section-article">
+                <article>
+                    <div class="article-image">
+                        <a href="#!">
+                            <img src="https://www.sheknows.com/wp-content/uploads/2024/03/kendra-scott-amazon.png?w=301&h=301&crop=1"
+                                alt="" draggable="false">
+                            <span class="bag-icon">
+                                <svg fill="#ffffff" width="28px" height="28px" viewBox="0 0 32 32" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M27 4.96h-5.975v-1.918c0-1.655-1.346-3-3-3h-3.989c-1.655 0-3 1.345-3 3v1.918h-6.037c-1.104 0-2 0.896-2 2v22.999c0 1.105 0.896 2 2 2h22c1.105 0 2-0.895 2-2v-22.999c0-1.104-0.895-2-2-2h0zM13.037 3.042c0-0.552 0.448-1 1-1h3.989c0.552 0 1 0.448 1 1v1.918h-5.989v-1.918zM27 29.959h-22v-22.999h6.037v2.058s-0.027 0.999 0.994 0.999c1.125 0 1.006-0.999 1.006-0.999v-2.058h5.989v2.058s-0.067 1.004 0.996 1.004c1 0 1.004-1.004 1.004-1.004v-2.058h5.974v22.999z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="article-content">
+                        <h3>
+                            <a href="#!">These Stunning 14K Gold Kendra Scott Jewelry Pieces Are Secretly on Sale,
+                                Starting at Just
+                                $32
+                            </a>
+                        </h3>
+                    </div>
+                </article>
+                <article>
+                    <div class="article-image">
+                        <a href="#!">
+                            <img src="https://www.sheknows.com/wp-content/uploads/2024/03/kendra-scott-amazon.png?w=301&h=301&crop=1"
+                                alt="" draggable="false">
+                            <span class="bag-icon">
+                                <svg fill="#ffffff" width="28px" height="28px" viewBox="0 0 32 32" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M27 4.96h-5.975v-1.918c0-1.655-1.346-3-3-3h-3.989c-1.655 0-3 1.345-3 3v1.918h-6.037c-1.104 0-2 0.896-2 2v22.999c0 1.105 0.896 2 2 2h22c1.105 0 2-0.895 2-2v-22.999c0-1.104-0.895-2-2-2h0zM13.037 3.042c0-0.552 0.448-1 1-1h3.989c0.552 0 1 0.448 1 1v1.918h-5.989v-1.918zM27 29.959h-22v-22.999h6.037v2.058s-0.027 0.999 0.994 0.999c1.125 0 1.006-0.999 1.006-0.999v-2.058h5.989v2.058s-0.067 1.004 0.996 1.004c1 0 1.004-1.004 1.004-1.004v-2.058h5.974v22.999z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="article-content">
+                        <h3>
+                            <a href="#!">These Stunning 14K Gold Kendra Scott Jewelry Pieces Are Secretly on Sale,
+                                Starting at Just
+                                $32
+                            </a>
+                        </h3>
+                    </div>
+                </article>
+                <article>
+                    <div class="article-image">
+                        <a href="#!">
+                            <img src="https://www.sheknows.com/wp-content/uploads/2024/03/kendra-scott-amazon.png?w=301&h=301&crop=1"
+                                alt="" draggable="false">
+                            <span class="bag-icon">
+                                <svg fill="#ffffff" width="28px" height="28px" viewBox="0 0 32 32" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M27 4.96h-5.975v-1.918c0-1.655-1.346-3-3-3h-3.989c-1.655 0-3 1.345-3 3v1.918h-6.037c-1.104 0-2 0.896-2 2v22.999c0 1.105 0.896 2 2 2h22c1.105 0 2-0.895 2-2v-22.999c0-1.104-0.895-2-2-2h0zM13.037 3.042c0-0.552 0.448-1 1-1h3.989c0.552 0 1 0.448 1 1v1.918h-5.989v-1.918zM27 29.959h-22v-22.999h6.037v2.058s-0.027 0.999 0.994 0.999c1.125 0 1.006-0.999 1.006-0.999v-2.058h5.989v2.058s-0.067 1.004 0.996 1.004c1 0 1.004-1.004 1.004-1.004v-2.058h5.974v22.999z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="article-content">
+                        <h3>
+                            <a href="#!">These Stunning 14K Gold Kendra Scott Jewelry Pieces Are Secretly on Sale,
+                                Starting at Just
+                                $32
+                            </a>
+                        </h3>
+                    </div>
+                </article>
+                <a href="#!" class="section-link">MORE SHOPPING →</a>
+            </div>
+        </div>
+        <div class="section-card">
+            <div class="wrapper">
+                <div class="wrapper-left">
+                    <img src="https://s.hdnux.com/photos/01/27/14/56/22858649/4/960x0.webp" alt="">
+                </div>
+                <div class="wrapper-right">
+                    <span><a href="#!">PARENTING</a></span>
+                    <h3>I Love the Concept of ‘Little Treat Culture’ — But What’s It Teaching My Kids?</h3>
+                    <p>A few weeks ago, after a stressful and overwhelming few days, I decided to treat myself to an
+                        iced
+                        latte and a pastry before running errands. I told myself it would lift my mood … and sure
+                        enough, it
+                        did. It may have just been the sheer factor of having time alone, which is a […]
+                    </p>
+                    <div>
+                        <p>by <a href="#!">ZARA HANAWALT</a></p>
+                    </div>
+                    <div class="btn-read">
+                        <a href="#!"><button>READ STORY →</button></a>
+                        <div class="btn-border"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-stories">
+            <div class="wrapper">
+                <div>
+                    <a href="#!">
+                        <span class="category">Health</span>
+                    </a>
+                    <div class="content">
+                        <div class="background">
+                        </div>
+                        <article>
+                            <a href="#!">
+                                <img src="https://www.sheknows.com/wp-content/uploads/2024/03/olivia-munn-breast-cancer.jpg?w=335&h=335&crop=1"
+                                    alt="">
+                            </a>
+
+                            <a href="#!">
+                                <p class="title">Olivia Munn Reveals Breast Cancer Diagnosis in Emotional Post: ‘Haven’t
+                                    Felt Like There. Olivia Munn Reveals Breast Cancer Diagnosis in Emotional Post:
+                                    ‘Haven’t Felt Like There</p>
+                            </a>
+
+                            <p class="author">by <a href="#!">MAGGIE RYAN</a></p>
+                        </article>
+                        <article>
+                            <a href="#!">
+                                <img src="https://www.sheknows.com/wp-content/uploads/2024/03/olivia-munn-breast-cancer.jpg?w=335&h=335&crop=1"
+                                    alt="">
+                            </a>
+
+                            <a href="#!">
+                                <p class="title">Olivia Munn Reveals Breast Cancer </p>
+                            </a>
+
+                            <p class="author">by <a href="#!">MAGGIE RYAN</a></p>
+                        </article>
+                        <div class="btn-more-health">
+                            <div class="btn-more-health-layout">
+                                <div class="btn-more-health-background"></div>
+                                <a href="#!"><button>
+                                        MORE HEALTH →
+                                    </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="#!">
+                        <span class="category">Health</span>
+                    </a>
+                    <div class="content">
+                        <div class="background">
+                        </div>
+                        <article>
+                            <a href="#!">
+                                <img src="https://www.sheknows.com/wp-content/uploads/2024/03/olivia-munn-breast-cancer.jpg?w=335&h=335&crop=1"
+                                    alt="">
+                            </a>
+
+                            <a href="#!">
+                                <p class="title">Olivia Munn Reveals Breast Cancer Diagnosis in Emotional Post: ‘Haven’t
+                                    Felt Like There.</p>
+                            </a>
+
+                            <p class="author">by <a href="#!">JENNIFER MATTERN, KWELI WRIGHT, REBECCA RAKOWITZ</a></p>
+                        </article>
+                        <article>
+                            <a href="#!">
+                                <img src="https://www.sheknows.com/wp-content/uploads/2024/03/olivia-munn-breast-cancer.jpg?w=335&h=335&crop=1"
+                                    alt="">
+                            </a>
+
+                            <a href="#!">
+                                <p class="title">Olivia Munn Reveals Breast Cancer </p>
+                            </a>
+
+                            <p class="author">by <a href="#!">MAGGIE RYAN</a></p>
+                        </article>
+                        <div class="btn-more-health">
+                            <div class="btn-more-health-layout">
+                                <div class="btn-more-health-background"></div>
+                                <a href="#!"><button>
+                                        MORE HEALTH →
+                                    </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="#!">
+                        <span class="category">Health</span>
+                    </a>
+                    <div class="content">
+                        <div class="background">
+                        </div>
+                        <article>
+                            <a href="#!">
+                                <img src="https://www.sheknows.com/wp-content/uploads/2024/03/olivia-munn-breast-cancer.jpg?w=335&h=335&crop=1"
+                                    alt="">
+                            </a>
+
+                            <a href="#!">
+                                <p class="title">Olivia Munn Reveals Breast Cancer Diagnosis in Emotional Post: ‘Haven’t
+                                    Felt Like There. Olivia Munn Reveals Breast Cancer Diagnosis in Emotional Post:
+                                    ‘Haven’t Felt Like There</p>
+                            </a>
+
+                            <p class="author">by <a href="#!">MAGGIE RYAN</a></p>
+                        </article>
+                        <article>
+                            <a href="#!">
+                                <img src="https://www.sheknows.com/wp-content/uploads/2024/03/olivia-munn-breast-cancer.jpg?w=335&h=335&crop=1"
+                                    alt="">
+                            </a>
+
+                            <a href="#!">
+                                <p class="title">Olivia Munn Reveals Breast Cancer </p>
+                            </a>
+
+                            <p class="author">by <a href="#!">MAGGIE RYAN</a></p>
+                        </article>
+                        <div class="btn-more-health">
+                            <div class="btn-more-health-layout">
+                                <div class="btn-more-health-background"></div>
+                                <a href="#!"><button>
+                                        MORE HEALTH →
+                                    </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="dropdown-nav">
+        <div class="wrapper">
+            <div class="dropdown-header">
+                <a href="#!" id="dropdown-logo">
+                    <svg viewBox="0 0 382 74" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none">
+                            <path
+                                d="M369.893 47.467l-6.773-1.665c-3.338-.784-7.067-2.645-7.067-6.956 0-4.31 3.631-7.347 8.932-7.347 4.515 0 8.54 2.743 8.834 6.857h6.085c-.294-8.229-7.361-12.441-15.017-12.441-8.736 0-15.116 5.388-15.116 12.833 0 7.642 5.202 10.973 11.68 12.54l6.577 1.567c4.711 1.176 7.263 3.625 7.263 7.348 0 4.604-4.024 7.837-10.6 7.837-6.675 0-10.209-3.918-10.896-7.74h-5.791c.785 8.72 8.736 13.324 16.686 13.324 9.521 0 16.883-5.192 16.883-13.323 0-5.29-2.748-10.678-11.68-12.834M342.99 26.894l-13.349 36.248-13.447-36.248h-6.478l-13.35 36.346-13.447-36.346h-6.772l17.57 45.75h5.496l13.644-37.423 14.232 37.424h5.497l17.079-45.75zm-87.643 40.754c-9.717 0-17.668-7.151-17.668-18.026 0-10.776 7.95-17.731 17.668-17.731 9.62 0 17.766 6.955 17.766 17.731 0 10.875-8.147 18.026-17.766 18.026m0-41.733c-13.055 0-23.95 9.208-23.95 23.707 0 14.5 10.895 24.002 23.95 24.002s24.048-9.502 24.048-24.002c0-14.499-10.993-23.707-24.048-23.707m-46.76 0c-5.692 0-13.152 2.645-15.9 9.208v-8.229h-6.282v45.75h6.282V47.272c.196-11.07 7.95-15.185 15.312-15.185 7.361 0 12.956 5.389 12.956 14.206v26.353h6.282V45.998c0-12.638-7.558-20.083-18.65-20.083m-30.79 1.255h-8.697l-17.1 17.624V1.276h-6.255v71.873H152V49.52l23.062 23.63h8.502l-25.31-25.992z"
+                                fill="#e3a294"></path>
+                            <path
+                                d="M127.185 29.147c2.764 0 4.814 2.329 4.814 5.42 0 8.569-9.983 13.797-18.51 15.545 1.835-10.286 6.629-20.965 13.696-20.965m13.841 5.95c0-4.504-4.547-8.399-14.46-8.399-13.89 0-29.568 12.259-29.568 26.98 0 10.923 7.565 19.848 20.984 19.848 9.652 0 18.593-6.174 22.036-14.22l-2.244-1.138c-3.51 7.41-11.617 12.517-17.55 12.517-3.534 0-5.872-1.763-6.95-6.367-.745-3.037-.758-7.25-.245-11.756 9.854-1.918 27.997-7.483 27.997-17.464M85.228 69.706c-.982 0-2.068-.49-2.402-2.058-.667-3.135.65-6.171 5.69-17.536 4.028-9.209 4.518-12.441 3.955-15.086-1.362-6.858-5.895-8.328-11.981-8.328-7.165 0-15.584 6.564-20.461 16.85h-.393l7.105-20.573c2.136-6.563 3.194-9.894 2.423-13.519C68.023 4.558 64.042.15 56.385.15c-6.38 0-11.105 3.625-13.178 10.483l2.29 1.077C47.5 5.44 51.241 3.186 53.4 3.186c1.669 0 2.6.686 2.955 2.352.417 1.959-.353 4.8-3.342 13.813L35.872 72.547c1.781-.392 4.86-.686 7.51-.686 2.16 0 6.169.392 7.703.686l4.273-13.128c4.02-12.931 9.363-20.573 14.02-24.981 2.52-2.45 5.848-4.8 8.597-4.8 1.276 0 1.835.783 2.023 1.665.62 2.449-2.862 8.23-6.607 16.458-3.534 7.838-5.227 13.716-4.414 17.536 1.078 4.605 4.5 8.23 11.469 8.23 8.245 0 13.344-5.095 15.743-9.503l-2.177-1.47c-2.203 4.409-6.036 7.152-8.784 7.152"
+                                fill="#ef5152"></path>
+                            <path
+                                d="M27.904 47.173c-2.291-4.31-6.026-9.404-6.693-12.54-.626-2.938.536-5.78 5.15-5.78 3.14 0 4.506.882 4.881 2.646.397 1.861-.635 2.547-.057 4.8.5 2.351 2.993 3.919 5.643 3.919 3.043 0 4.428-2.253 3.74-5.486-1.084-5.095-6.716-8.034-14.47-8.034-10.503 0-17.472 7.838-15.72 16.067.87 3.625 2.623 7.25 5.146 11.266 3.083 4.8 5.672 7.74 6.485 11.56.474 1.763.74 5.78-5.836 5.78-3.534 0-6.812-1.567-7.125-3.037-.355-1.665 1.54-2.449.893-5.486-.5-2.351-2.431-4.506-5.67-4.506-3.24 0-4.758 2.547-4.133 5.486 1.272 5.976 9.524 9.698 16.591 9.698 13.055 0 18.62-7.053 17.146-13.519-1-4.702-2.756-6.956-5.97-12.834"
+                                fill="#ef5152"></path>
+                        </g>
+                    </svg>
+                </a>
+                <div class="dropdown-search">
+                    <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
+                                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </svg>
+                    <input type="text" placeholder="Search">
+                </div>
+                <button onclick="closeDropdownNav()">
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        stroke="#ffffff">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M16 8L8 16M8 8L16 16" stroke="#ffffff" stroke-width="2" stroke-linecap="round">
+                            </path>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <div class="dropdown-body">
+                <div class="content">
+                    <h1>Parenting</h1>
+                    <ul>
+                        <li>Parenting News</li>
+                        <li>Kids</li>
+                        <li>Baby Names</li>
+                        <li>Motherhood</li>
+                        <li>What to Buy</li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h1>Parenting</h1>
+                    <ul>
+                        <li>Parenting News</li>
+                        <li>Kids</li>
+                        <li>Baby Names</li>
+                        <li>Motherhood</li>
+                        <li>What to Buy</li>
+                        <li>What to Buy</li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h1>Parenting</h1>
+                    <ul>
+                        <li>Parenting News</li>
+                        <li>Kids</li>
+                        <li>What to Buy</li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h1>Parenting</h1>
+                    <ul>
+                        <li>Kids</li>
+                        <li>What to Buy</li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h1>Parenting</h1>
+                    <ul>
+                        <li>Parenting News</li>
+                        <li>Kids</li>
+                        <li>What to Buy</li>
+                        <li>Parenting News</li>
+                        <li>What to Buy</li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h1>Parenting</h1>
+                    <ul>
+                        <li>Parenting News</li>
+                        <li>Parenting News</li>
+                        <li>Kids</li>
+                        <li>Parenting News</li>
+                        <li>Parenting News</li>
+                        <li>What to Buy</li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h1>Parenting</h1>
+                    <ul>
+                        <li>Parenting News</li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h1>Parenting</h1>
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown-footer">
+                <div class="contact-form">
+                    <div class="contact-social">
+                        <h1>Follow Us</h1>
+                        <ul>
+                            <li><a href="#!"><svg fill="#ee5055" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px"
+                                        viewBox="0 0 512 512" xml:space="preserve" stroke="#ee5055">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <g id="7935ec95c421cee6d86eb22ecd12951c">
+                                                <path style="display: inline;"
+                                                    d="M220.646,338.475C207.223,408.825,190.842,476.269,142.3,511.5 c-14.996-106.33,21.994-186.188,39.173-270.971c-29.293-49.292,3.518-148.498,65.285-124.059 c76.001,30.066-65.809,183.279,29.38,202.417c99.405,19.974,139.989-172.476,78.359-235.054 C265.434-6.539,95.253,81.775,116.175,211.161c5.09,31.626,37.765,41.22,13.062,84.884c-57.001-12.65-74.005-57.6-71.822-117.533 c3.53-98.108,88.141-166.787,173.024-176.293c107.34-12.014,208.081,39.398,221.991,140.376 c15.67,113.978-48.442,237.412-163.23,228.529C258.085,368.704,245.023,353.283,220.646,338.475z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg></a></li>
+                            <li><a href="#!"><svg width="16px" height="16px" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                                                fill="#000000"></path>
+                                            <path
+                                                d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                                                fill="#000000"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                                                fill="#000000"></path>
+                                        </g>
+                                    </svg></a></li>
+                            <li><a href="#!"><svg width="16px" height="16px" viewBox="-5 0 20 20" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        fill="#000000">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <title>facebook [#4670D2]</title>
+                                            <desc>Created with Sketch.</desc>
+                                            <defs> </defs>
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="Dribbble-Light-Preview"
+                                                    transform="translate(-385.000000, -7399.000000)" fill="#4670D2">
+                                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                        <path
+                                                            d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z"
+                                                            id="facebook-[#4670D2]"> </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg></a></li>
+                            <li><a href="#!"><svg width="16px" height="16px" viewBox="0 -2 20 20" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        fill="#000000">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <title>twitter [#81BBFF54]</title>
+                                            <desc>Created with Sketch.</desc>
+                                            <defs> </defs>
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="Dribbble-Light-Preview"
+                                                    transform="translate(-60.000000, -7521.000000)" fill="#81BBFF">
+                                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                        <path
+                                                            d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705"
+                                                            id="twitter-[#81BBFF54]"> </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg></a></li>
+                            <li><a href="#!"><svg width="16px" height="16px" viewBox="0 0 48 48" id="Layer_2"
+                                        data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" fill="#E12828"
+                                        stroke="#E12828">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <defs>
+                                                <style>
+                                                    .cls-1 {
+                                                        fill: none;
+                                                        stroke: #E12828;
+                                                        stroke-linecap: round;
+                                                        stroke-linejoin: round;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <path class="cls-1"
+                                                d="M7.5,5.5h33a2,2,0,0,1,2,2v8.33a2,2,0,0,1-2,2H30.17v9.93a2.41,2.41,0,0,1-2.41,2.41H17.83V40.5a2,2,0,0,1-2,2H7.5a2,2,0,0,1-2-2V7.5A2,2,0,0,1,7.5,5.5Z">
+                                            </path>
+                                        </g>
+                                    </svg></a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-email">
+                        <h1>Alerts & Newsletters</h1>
+                        <div>
+                            <div class="contact-email-form">
+                                <input type="text" placeholder="Email address">
+                                <button>SIGNUP</button>
+
+                            </div>
+                            <p>By providing your information, you agree to our Terms of Use and our Privacy Policy. We
+                                use vendors that may also process your information to help provide our services. // This
+                                site is protected by reCAPTCHA Enterprise and the Google Privacy Policy and Terms of
+                                Service apply.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-information">
+                    <div class="detail-link">
+                        <ul>
+                            <li>
+                                <a href="#!">CONTACT US</a>
+                            </li>
+                            <li>
+                                <a href="#!">ADVERTISE</a>
+                            </li>
+                            <li>
+                                <a href="#!">ADCHOICES</a>
+                            </li>
+                            <li>
+                                <a href="#!">ACCESSIBILITY</a>
+                            </li>
+                            <li>
+                                <a href="#!">CAREERS</a>
+                            </li>
+                            <li>
+                                <a href="#!">PRIVACY POLICY</a>
+                            </li>
+                            <li>
+                                <a href="#!">EU PRIVACY PREFERENCES</a>
+                            </li>
+                            <li>
+                                <a href="#!">TERMS OF USE</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="detail-company">
+                        <div class="image">
+                            <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/082015/pmc_0.png?itok=yZHMzem1"
+                                alt="">
+                        </div>
+                        <p>SHEKNOWS IS A PART OF PENSKE MEDIA CORPORATION. © 2024 SHEMEDIA, LLC. ALL RIGHTS RESERVED.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
